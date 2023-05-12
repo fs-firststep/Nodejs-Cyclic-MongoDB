@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+    <title>Registration </title>
+</head>
+<body>
+     
+   <section class="contact">
+       <div class="contact-form">
+
+          <form action="/registration" method="POST">
+             <h1 class="lg-heading">Register</h1>
+
+             <div class="inputbox">
+                <i class="fas fa-3x fa-user logo"></i>
+                <input type="text" id="username" autocomplete="off" name="username" required>
+                <label for="username">Username</label>     
+             </div>
+             
+             <div class="inputbox">
+                <i class="fas fa-3x fa-envelope-square logo"></i>
+                <input type="email" id="email" autocomplete="off" name="email" required>
+                <label for="email">Email</label>     
+             </div>
+
+             <div class="inputbox">
+                <i class="fas fa-3x fa-lock logo"></i>
+                <input type="password" id="password" autocomplete="off" name="password" required>
+                <label for="password">Password</label>  
+             </div>
+
+             <div class="gender" >
+               <i class="fas fa-3x fa-venus-mars logo"></i>
+                <p >Gender</p>
+
+                <div class="radio-section">
+                   <input type="radio" name="gender" id="male">                 
+                   <label class="gen" for="male">Male</label>
+                </div>
+                
+                <div class="radio-section">
+                   <input type="radio" name="gender" id="female">  
+                  <label class="gen" for="female">Female</label>
+                </div>
+               
+                <div class="radio-section">
+                   <input type="radio" name="gender" id="other">  
+                  <label class="gen" for="other">Other</label>
+                </div>
+               
+             </div>
+
+             <input type="submit" class="btn" value="submit">
+          </form>
+
+       </div>
+   </section>
+
+
+
+</body>
+</html>
